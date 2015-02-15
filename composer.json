@@ -1,0 +1,30 @@
+{
+    "name": "ikandar/baran",
+    "description": "A truly content management framework",
+    "keywords": ["framework", "cms", "panda", "application template"],
+    "homepage": "https://ikandar.github.io/baran/",
+    "type": "project",
+    "license": "BSD License",
+    "authors": [
+        {
+            "name": "Kandar",
+            "email": "k4ndar@yahoo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "panada/panada": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "classmap": ["app"]
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "php web/index.php cli install"
+        ]
+    }
+}
